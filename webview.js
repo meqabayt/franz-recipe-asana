@@ -4,13 +4,10 @@ const path = require('path');
 
 module.exports = Franz => {
   const getMessages = function getMessages() {
-    const elements = document.querySelectorAll('.unread');
+    const hasNotification = document.querySelectorAll(".SidebarTopNavLinks-notificationsButton--hasNewNotifications");
     let count = 0;
-
-    for (let i = 0; i < elements.length; i += 1) {
-      if (elements[i].querySelectorAll('*[data-icon="muted"]').length === 0) {
-        count += 1;
-      }
+    if (hasNotification.length > 0) {
+      count +=1;
     }
 
     // set Franz badge
