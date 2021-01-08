@@ -7,7 +7,9 @@
   "author": "Elnur Mammadov <baytbybayt@gmail.com>",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://app.asana.com",
-    "hasNotificationSound": true
+    "serviceURL": "https://app.asana.com/0/home/{teamId}",
+    "hasNotificationSound": true,
+    "hasTeamId": true,
+    "urlInputPrefix": true
   }
 }
