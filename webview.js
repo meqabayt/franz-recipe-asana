@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = Franz => {
   const getMessages = function getMessages() {
-    const hasNotification = document.querySelectorAll(".SidebarTopNavLinks-notificationsButton--indicator");// ".SidebarTopNavLinks-notificationsButton--hasNewNotifications");
+    const hasNotification = document.querySelectorAll(".SidebarTopNavLinks-notificationsButton--indicator");
     let count = 0;
     if (hasNotification.length > 0) {
       count +=1;
